@@ -1,3 +1,42 @@
-venv/
-.env
+# Python bytecode
 __pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Django-specific
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+
+# Environment variables
+.env
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Migrations (optional – some teams prefer to track these)
+# ** Uncomment this if you want to ignore them **
+# */migrations/
+# !*/migrations/__init__.py
+
+# Pytest / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.cache/
+
+# Other
+*.bak
+*.swp
