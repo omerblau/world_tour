@@ -3,40 +3,32 @@ __pycache__/
 *.py[cod]
 *.pyo
 
-# Virtual environment
+# Virtual environments
 venv/
-ENV/
-env/
 .venv/
+env/
+ENV/
 
-# Django-specific
-*.log
-*.pot
-*.pyc
+# Environment files
+.env
+
+# SQLite DB (if using)
 *.sqlite3
 db.sqlite3
 
-# Environment variables
-.env
+# Django stuff
+*.log
+*.pot
+
+# Pytest & coverage
+.coverage
+.pytest_cache/
+htmlcov/
+.cache/
 
 # VS Code settings
 .vscode/
 
-# OS files
+# OS junk
 .DS_Store
 Thumbs.db
-
-# Migrations (optional – some teams prefer to track these)
-# ** Uncomment this if you want to ignore them **
-# */migrations/
-# !*/migrations/__init__.py
-
-# Pytest / coverage
-.coverage
-htmlcov/
-.pytest_cache/
-.cache/
-
-# Other
-*.bak
-*.swp
