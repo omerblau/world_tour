@@ -1,5 +1,7 @@
 # Python bytecode
 __pycache__/
+*/__pycache__/
+**/__pycache__/
 *.py[cod]
 *.pyo
 
@@ -9,18 +11,25 @@ venv/
 env/
 ENV/
 
-# Environment files
+# Environment variables
 .env
-
-# SQLite DB (if using)
-*.sqlite3
-db.sqlite3
+.env.*
 
 # Django stuff
 *.log
 *.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
 
-# Pytest & coverage
+# Migrations (if you ever decide to ignore them)
+# ** Not recommended in most cases **
+# */migrations/*.py
+*/migrations/__pycache__/
+
+# Coverage and testing
 .coverage
 .pytest_cache/
 htmlcov/
